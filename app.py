@@ -108,7 +108,7 @@ if st.session_state.resultados_otimizacao:
                 # Exibir como tabela formatada
                 st.table(dados_itinerario)
                 
-                # Botão para baixar a lista em CSV (Simulando o envio para o entregador)
+                # Botão para baixar a lista em CSV 
                 df_rota = pd.DataFrame(dados_itinerario)
                 csv = df_rota.to_csv(index=False).encode('utf-8')
                 st.download_button(

@@ -97,7 +97,7 @@ class MotorOtimizacao:
 # Bloco de teste para execução via terminal
 if __name__ == "__main__":
     motor = MotorOtimizacao("data/pedidos_bsb.csv")
-    print("⏳ Iniciando otimização de rotas para Brasília...")
+    print(" Iniciando otimização de rotas para Brasília...")
     
     resultados = motor.resolver_e_retornar_rotas()
     
@@ -107,4 +107,4 @@ if __name__ == "__main__":
             print(f"Rota #{i+1} | Veículo: {r['veiculo']} | Distância: {r['distancia_km']}km")
             print(f"Caminho: {r['caminho']}\n")
     else:
-        print("❌ Nenhuma solução encontrada que respeite as restrições.")
+        print(" Nenhuma solução encontrada que respeite as restrições.")
